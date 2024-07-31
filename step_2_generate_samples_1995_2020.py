@@ -38,7 +38,7 @@ def temporalize(X, y, lookback):
         output_y.append(y[i+lookback-1])
     return output_X, output_y
 
-WTcorrectionPath = '/data/taoliu/taoliufile/great_lake/data/GLE_model_data'
+WTcorrectionPath = '/data/taoliu/taoliufile/great_lake/data/GLE_model_data' # Data can be found https://drive.google.com/drive/folders/1u8K2iFyDQCG8bVojHQwWH9dz8yk9ITkp?usp=sharing
 file_scalarX=os.path.join(WTcorrectionPath,'scalerX.sav')
 file_scalarY=os.path.join(WTcorrectionPath,'scalerY.sav')
 scalerX=pickle.load(open(file_scalarX,'rb'))
