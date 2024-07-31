@@ -17,7 +17,7 @@ from tensorflow.keras.layers import Dense,Dropout,BatchNormalization,RepeatVecto
 from sklearn.preprocessing import StandardScaler
 from multiprocessing import Pool
 
-files=glob.glob('/data/taoliu/taoliufile/great_lake/new_data/GLH/data_cfsr*.mat')
+files=glob.glob('/data/taoliu/taoliufile/great_lake/new_data/GLH/data_cfsr*.mat') # Data can be downloaded from https://drive.google.com/drive/folders/1u8K2iFyDQCG8bVojHQwWH9dz8yk9ITkp?usp=sharing
 files.sort()
 files=files[16:] # select the files from year 1995
 datamat=loadmat(files[0])['dd']['sw'][0,0]
